@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My High School Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1e3a8a;
+            color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #93c5fd;
+        }
+
+        /* Hero / Welcome Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 5rem 2rem 2rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-left: 5px solid #3b82f6;
+            padding-left: 10px;
+        }
+
+        /* Buttons & Cards */
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1e3a8a;
+            color: white;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#seminars">Seminars</a></li>
+                <li><a href="#future-plans">Future Plans</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>High School Student | Academic Achiever | Future Innovator</p>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a dedicated high school student passionate about learning, exploring new technologies, and making an impact. I balance my academic curriculum with extra-curricular activities, constantly striving to expand my horizons and develop new skills.</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="card">
+            <h3>Honor Roll Student</h3>
+            <div class="date">2024 - Present</div>
+            <p>Maintained a straight-A average throughout my high school career.</p>
+        </div>
+        <div class="card">
+            <h3>Science Fair - 1st Place</h3>
+            <div class="date">March 2025</div>
+            <p>Won top honors for a project analyzing regional water quality using accessible filtration methods.</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications Done</h2>
+        <div class="card">
+            <h3>Introduction to Python Programming</h3>
+            <div class="date">Issued by Coursera / Online Provider</div>
+            <p>Learned fundamental concepts of coding, loops, data structures, and basic automation scripts.</p>
+        </div>
+        <div class="card">
+            <h3>First Aid & CPR Certified</h3>
+            <div class="date">Issued by Red Cross</div>
+            <p>Completed basic life support and emergency response training.</p>
+        </div>
+    </section>
+
+    <section id="seminars">
+        <h2>Seminars Attended</h2>
+        <div class="card">
+            <h3>Youth Leadership Summit</h3>
+            <div class="date">November 2025</div>
+            <p>Participated in a weekend-long seminar focusing on public speaking, team management, and community organizing.</p>
+        </div>
+        <div class="card">
+            <h3>The Future of Artificial Intelligence</h3>
+            <div class="date">January 2026</div>
+            <p>Attended a guest lecture series hosted by local university professors detailing the ethical and technical aspects of AI.</p>
+        </div>
+    </section>
+
+    <section id="future-plans">
+        <h2>Future Plans</h2>
+        <p>Upon graduating high school, I plan to pursue a Bachelor's Degree in Computer Science or Engineering. My long-term goal is to build software applications that solve real-world problems. In the short term, I am seeking summer internships and volunteer opportunities to further hone my technical and leadership skills.</p>
+    </section>
+
+    <section id="resume">
+        <h2>Download Resume</h2>
+        <p>Want a quick summary of my experience, coursework, and contact details? Feel free to download my complete resume below.</p>
+        <a href="my-resume.pdf" download class="btn">📥 Download Resume (PDF)</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 High School Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
